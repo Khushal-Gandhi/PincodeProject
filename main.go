@@ -23,7 +23,7 @@ func main() {
 
 	app := fiber.New()
 
-	app.Get("/api/search/:pincode", func(c *fiber.Ctx) error {
+	app.Get("/pincode/api/search/:pincode", func(c *fiber.Ctx) error {
 
 		pincode := c.Params("pincode")
 
